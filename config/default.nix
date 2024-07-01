@@ -31,6 +31,7 @@ in {
 	  tabstop = 2;
 		timeout = true;
 		timeoutlen = 300;
+		signcolumn = "number";
   };
 	globals = {
 		mapleader = " ";
