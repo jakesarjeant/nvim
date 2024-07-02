@@ -1,3 +1,4 @@
+{ lib, pkgs, ... }:
 {
 	plugins.lualine = {
 		enable = true;
@@ -14,7 +15,15 @@
 			}];
 			lualine_b = ["filename" "branch"];
 			lualine_c = ["%="];
-			lualine_x = [];
+			lualine_x = [
+				"encoding"
+				{
+					name = "fileformat";
+					extraConfig.symbols.unix = if lib.hasSuffix "darwin" pkgs.system
+																			 then ""
+																			 else "";
+				}
+			];
 			lualine_y = ["filetype" "progress"];
 			lualine_z = [{
 				name = "location";
