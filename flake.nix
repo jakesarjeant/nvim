@@ -4,6 +4,7 @@
   inputs.nixvim.url = "github:nix-community/nixvim";
   inputs.nixpkgs.url = "github:nixos/nixpkgs";
   inputs.flake-compat.url = "https://flakehub.com/f/edolstra/flake-compat/1.tar.gz";
+  inputs.neorg-overlay.url = "github:nvim-neorg/nixpkgs-neorg-overlay";
 
   outputs = {
     self,
@@ -30,6 +31,12 @@
 					module = ./config;
 				};
       in {
+				_module.args.pkgs = import inputs.nixpkgs {
+					inherit system;
+					overlays = [
+						inputs.neorg-overlay.overlays.default
+					];
+				};
         packages = {
           inherit nvim;
           default = nvim;
