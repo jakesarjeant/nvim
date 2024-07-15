@@ -7,6 +7,9 @@
 				name = "home";
 				path = "~/notes/home";
 			}];
+			picker = {
+				name = "telescope.nvim";
+			};
 		};
 	};
 }
