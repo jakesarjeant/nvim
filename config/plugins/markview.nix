@@ -11,12 +11,22 @@
 	})];
 	autoCmd = [
 		{
-			command = "sleep 2 | Markview enable";
+			callback = { __raw =''
+				function()
+					vim.defer_fn(function()
+						if vim.api.nvim_get_mode()["mode"] == "n" then
+							vim.cmd('Markview enable')
+						end
+					end, 2000)
+				end
+			''; };
 			event = ["InsertLeave"];
 			pattern = "*.md";
 		}
 		{
-			command = "Markview disable";
+			callback = {
+				__raw = "function() vim.cmd('Markview disable') end";
+			};
 			event = ["InsertEnter"];
 			pattern = "*.md";
 		}
