@@ -2,7 +2,6 @@
 	plugins.cmp = {
 		enable = true;
 
-
 		settings = {
 			mapping = {
 				"<C-Space>" = "cmp.mapping.complete()";
