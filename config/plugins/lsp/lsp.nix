@@ -3,6 +3,8 @@
 		lsp-lines.enable = true;
 		lsp-format.enable = true;
 		helm.enable = true;
+		# NOTE: For formatting to work, rustfmt needs to be installed.
+		rustaceanvim.enable = true;
 		lsp = {
 			enable = true;
 			servers = {
@@ -48,6 +50,10 @@
             action = "rename";
             desc = "Rename";
           };
+					"<leader>cf" = {
+						action = "format";
+						desc = "Format";
+					};
         };
         diagnostic = {
           "<leader>cd" = {
