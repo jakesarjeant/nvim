@@ -1,7 +1,7 @@
 {
   description = "My neovim config";
 
-  inputs.nixvim.url = "github:nix-community/nixvim";
+  inputs.nixvim.url = "github:nix-community/nixvim/nixos-24.05";
   inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
   inputs.flake-compat.url = "https://flakehub.com/f/edolstra/flake-compat/1.tar.gz";
   inputs.neorg-overlay.url = "github:nvim-neorg/nixpkgs-neorg-overlay";

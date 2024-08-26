@@ -24,6 +24,7 @@ in {
 	imports = validFiles ./.;
 
   colorschemes.oxocarbon.enable = true;
+  colorschemes.ayu.enable = true;
 	clipboard.providers.wl-copy.enable = true;
   opts = {
 	  relativenumber = true;
