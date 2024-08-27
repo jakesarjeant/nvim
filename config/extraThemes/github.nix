@@ -6,7 +6,7 @@
 			owner = "projekt0n";
 			repo = "github-nvim-theme";
 			rev = "6b46163";
-			hash = "sha256-RC52AmFNztYyPdNu9Wu8MWPIGCgF+gmHwx769ia+roc=";
+			hash = "sha256-GoJOeqbBm0b766aZtce/n1Kq2zwbQ4UKRv7qgBlgQE8=";
 		};
 	})];
 }
