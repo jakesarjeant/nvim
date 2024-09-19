@@ -37,7 +37,10 @@ in {
 	globals = {
 		mapleader = " ";
 	};
-	extraConfigVim = "set clipboard+=unnamedplus";
+	extraConfigVim = "
+		set clipboard+=unnamedplus
+		source ~/.vimrc
+	";
 	autoCmd = [
     {
       command = "hi Normal guibg=None ctermbg=None";
