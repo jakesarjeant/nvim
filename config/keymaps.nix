@@ -56,5 +56,10 @@
 			action = "<cmd>bn<cr>";
 			mode = ["n" "v"];
 		}
+		{
+			key = "<Esc>";
+			action = "<cmd>noh<cr>";
+			mode = ["n"];
+		}
 	];
 }
