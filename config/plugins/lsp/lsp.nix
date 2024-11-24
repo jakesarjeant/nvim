@@ -14,6 +14,7 @@
 				marksman.enable = true;
 				tsserver.enable = true;
 				jsonls.enable = true;
+				fennel_ls.enable = true;
 			};
 			keymaps = {
         silent = true;
