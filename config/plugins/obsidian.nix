@@ -28,7 +28,7 @@
 		}
 		{
 			key = "<leader>ot";
-			action = "<cmd>ObisidianTags<cr>";
+			action = "<cmd>ObsidianTags<cr>";
 			mode = "n";
 			options.desc = "Show/Search Tags";
 		}
