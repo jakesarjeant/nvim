@@ -23,8 +23,25 @@ let
 in {
 	imports = validFiles ./.;
 
-  colorschemes.oxocarbon.enable = true;
-  colorschemes.ayu.enable = true;
+  colorschemes = {
+		oxocarbon.enable = true;
+		ayu.enable = true;
+		catpuccin.enable = true;
+		cyberdream.enable = true;
+		dracula.enable = true;
+		everforest.enable = true;
+		gruvbox.enable = true;
+		kanagawa.enable = true;
+		melange.enable = true;
+		modus.enable = true;
+		nightfox.enable = true;
+		nord.enable = true;
+		one.enable = true;
+		palette.enable = true;
+		polamdres.enable = true;
+		rose-pine.enable = true;
+		tokyonight.enable = true;
+	};
 	clipboard.providers.wl-copy.enable = true;
   opts = {
 	  relativenumber = true;
