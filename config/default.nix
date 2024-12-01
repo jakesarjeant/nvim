@@ -55,7 +55,7 @@ in {
 		mapleader = " ";
 	};
 	extraConfigVim = "
-		colorscheme tokyonight-night
+		colorscheme oxocarbon
 
 		set clipboard+=unnamedplus
 		source ~/.vimrc
