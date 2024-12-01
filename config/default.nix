@@ -26,7 +26,7 @@ in {
   colorschemes = {
 		oxocarbon.enable = true;
 		ayu.enable = true;
-		catpuccin.enable = true;
+		catppuccin.enable = true;
 		cyberdream.enable = true;
 		dracula.enable = true;
 		everforest.enable = true;
@@ -38,7 +38,7 @@ in {
 		nord.enable = true;
 		one.enable = true;
 		palette.enable = true;
-		polamdres.enable = true;
+		poimandres.enable = true;
 		rose-pine.enable = true;
 		tokyonight.enable = true;
 	};
@@ -55,6 +55,8 @@ in {
 		mapleader = " ";
 	};
 	extraConfigVim = "
+		colorscheme tokyonight-night
+
 		set clipboard+=unnamedplus
 		source ~/.vimrc
 	";
