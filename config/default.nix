@@ -84,4 +84,8 @@ in {
 		CursorLineNr = transparent;
 		StatusLine = transparent;
 	};
+
+	extraConfigLua = "
+		require'nvim-treesitter.configs'.setup { highlight = { enable = true } }
+	";
 }

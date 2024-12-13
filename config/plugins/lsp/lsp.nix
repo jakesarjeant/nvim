@@ -4,7 +4,16 @@
 		lsp-format.enable = true;
 		helm.enable = true;
 		# NOTE: For formatting to work, rustfmt needs to be installed.
-		rustaceanvim.enable = true;
+		rustaceanvim = {
+		  enable = true;
+			settings = {
+			  default_settings = {
+					rust-analyzer = {
+						cargo.extraArgs = ["--all-features"];
+					};
+				};
+			};
+		};
 		lsp = {
 			enable = true;
 			servers = {
