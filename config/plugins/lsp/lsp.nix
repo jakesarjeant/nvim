@@ -23,6 +23,7 @@
 				marksman.enable = true;
 				tsserver.enable = true;
 				jsonls.enable = true;
+				zls.enable = true;
 				# fennel_ls.enable = true;
 			};
 			keymaps = {
